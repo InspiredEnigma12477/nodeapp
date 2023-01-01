@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shivam Sakore</title>
+    <style></style>
+</head>
+<body>
+    <h1 class="Shivam">
+        Shivam Sakore
+    </h1>
+
+    <form action="">
+        <label for="firstname">Firstname</label>
+        <input type="text" name="firstname" id="firstname">
+        <br>
+        <label for="lastname">Lastname</label>
+        <input type="text" name="lastname" id="lastname">
+        <br>
+        <button type="button" onclick="display()">Submit</button>
+        <div id="result" class="result"></div>
+    </form>
+
+    <script>
+        function display(){
+            firstname = document.getElementById("firstname").value;
+            lastname = document.getElementById("lastname").value;
+            
+            
+            // delay for 10s
+            setTimeout(() => {
+                document.getElementById("result").innerHTML += firstname + " " + lastname;
+            }, 10000);
+        }
+    </script>
+</body>
+</html>
